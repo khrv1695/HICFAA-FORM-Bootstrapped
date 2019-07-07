@@ -1,0 +1,1013 @@
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<!DOCTYPE html>
+<style>
+    .sec,
+    .row-bordered {
+        border: 1px solid;
+        border-color: red;
+    }
+
+    .row-bordered-bottom {
+        border-bottom: 1px solid;
+        border-color: red;
+    }
+
+    .dashed-bottom {
+        border-style: dashed;
+        border-width: 0px 0px 2px 0px;
+        border-color: red;
+        margin-bottom: 0.5em;
+    }
+
+    .row-bordered-top {
+        border-top: 1px solid;
+        border-color: red;
+    }
+
+    .bl {
+        border-left: 1px solid;
+        border-color: red;
+    }
+
+    .bl-dassed {
+        border-left: 2px dashed;
+        border-color: red;
+    }
+
+    body {
+        color: red
+    }
+
+    .col-lg-1 {
+        padding: 5px;
+    }
+
+    .min-height {
+        height: 1.1em;
+    }
+
+    .no-border-top {
+        border-top: 0px;
+    }
+
+    .vericaltext {
+        transform: rotate(270deg);
+        transform-origin: left top 0;
+        margin-right: -0.6em;
+        margin-top: 5em;
+        text-transform: uppercase;
+        float: right;
+    }
+
+    .vericaltext-body {
+        transform: rotate(270deg);
+        transform-origin: left top 0;
+        margin-right: -19em;
+        margin-top: 75em;
+        text-transform: uppercase;
+        float: right;
+    }
+</style>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HICFAA 1500</title>
+</head>
+
+<body>
+    <!-- <div class="vericaltext">carrier</div>
+    <div class="vericaltext-body">PHYSICIAN OR SUPPLIER INFORMATION</div> -->
+
+    <div style="margin:3em">
+        <div style="margin-left: -0.7em;">
+            <img src="./QR.PNG" alt="">
+            <h2 class="px-0">HEALTH INSURANCE CLAIM FORM</h2>
+            APPROVED BY NATIONAL UNIFORM CLAIM COMMITTEE (NUCC) 02/12
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="row" style="margin-left: -0.2em;">
+                        <div class="col-lg-1 row-bordered"></div>
+                        <div class="col-lg-1 row-bordered"></div>
+                        <div class="col-lg-1 row-bordered"></div>
+                        PICA
+                    </div>
+                </div>
+                <div class="offset-lg-8 col-lg-2">
+                    <div class="row">
+                        <div class="offset-lg-6 col-lg-3">
+                            <span class="ml-2"> PICA</span>
+                        </div>
+                        <div class="col-lg-1 row-bordered"></div>
+                        <div class="col-lg-1 row-bordered"></div>
+                        <div class="col-lg-1 row-bordered"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row row-bordered" style="border-top-width: 0.3em;">
+            <div class="col-lg-1">
+                <label for="">1. MEDICARE &nbsp;</label>
+                <div class="row">
+                    <div class="offset-lg-2 col-lg-2 row-bordered"></div>
+                    <div class="col-lg-6 px-1">
+
+                        <label for="" class="font-italic">(Medicare#)</label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-1">
+                <label for="">MEDICAID</label>
+                <div class="row">
+                    <div class="offset-lg-2 col-lg-2 row-bordered"></div>
+                    <div class="col-lg-6 px-1">
+
+                        <label for="" class="font-italic">(Medicaid#)</label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-1">
+                <label for="">TRICARE</label>
+                <div class="row">
+                    <div class="offset-lg-2 col-lg-2 row-bordered"></div>
+                    <div class="col-lg-6 px-1">
+
+                        <label for="" class="font-italic">(ID#/DOD#)</label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-1" style="margin-left: 1.6em;">
+                <label for="">CHAMPVA</label>
+                <div class="row">
+                    <div class="col-lg-2 row-bordered"></div>
+                    <div class="col-lg-9 px-1">
+
+                        <label for="" class="font-italic">(Member ID#)</label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-1">
+                <label for="" class="mb-0" style="line-height: 1.1em;">GROUP HEALTH PLAN</label>
+
+                <div class="row">
+                    <div class="offset-lg-2 col-lg-2 row-bordered"></div>
+                    <div class="col-lg-6 px-1">
+
+                        <label for="" class="font-italic">(ID#)</label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-1">
+                <label for="" class="mb-0" style="line-height: 1.1em;">FECA BLK LUNG</label>
+                <div class="row">
+                    <div class="offset-lg-2 col-lg-2 row-bordered"></div>
+                    <div class="col-lg-6 px-1">
+
+                        <label for="" class="font-italic">(ID#)</label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-1" style="margin-left: -1.6em;">
+                <label for="">OTHER</label>
+                <div class="row">
+                    <div class="offset-lg-2 col-lg-2 row-bordered"></div>
+                    <div class="col-lg-6 px-1">
+
+                        <label for="" class="font-italic">(ID#)</label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 bl">
+                <label for="">1 a. INSURED'S I.D. NUMBER</label>
+            </div>
+            <div class="col-lg-2">
+                <label for="">(For Program in Item 1)</label>
+            </div>
+        </div>
+
+        <div class="row row-bordered no-border-top">
+            <div class="col-lg-4">2. PATIENT'S NAME(Last Name, First Name,Middle Initial)</div>
+            <div class="col-lg-3 bl">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-8">3.PATIENT'S BIRTH DATE</div>
+                        <div class="offset-lg-2 col-lg-2">SEX</div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="row min-height">
+                        <div class="col-lg-2">MM</div>
+                        <div class="col-lg-1">|</div>
+                        <div class="col-lg-2">DD</div>
+                        <div class="col-lg-1">|</div>
+                        <div class="col-lg-2">YY</div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="row min-height">
+
+                        <div class="offset-lg-2 col-lg-1">|</div>
+                        <div class="offset-lg-2 col-lg-1">|</div>
+                        <div class="offset-lg-2 col-lg-1">M</div>
+                        <div class="col-lg-1 row-bordered"></div>
+                        <div class="col-lg-1">F</div>
+                        <div class="col-lg-1 row-bordered"></div>
+
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="row">
+
+                        <div class="offset-lg-2 col-lg-1">|</div>
+                        <div class="offset-lg-2 col-lg-1">|</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 bl">
+                4. INSURED'S NAME (Last Name, First Name, Middle Initial)
+            </div>
+        </div>
+
+        <div class="row row-bordered no-border-top">
+            <div class="col-lg-4">5. PATIENT'S ADDRESS (No., Street)</div>
+            <div class="col-lg-3 bl">
+                <div class="col-lg-12">
+                    <div class="row">
+                        6.PATIENT RELATIONSHIP TO INSURED
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="row mb-1">
+                        <div class="col-lg-2 ">Self</div>
+                        <div class="col-lg-1 row-bordered"></div>
+                        <div class="col-lg-2 px-0">Spouse</div>
+                        <div class="col-lg-1 row-bordered"></div>
+                        <div class="col-lg-2">Child</div>
+                        <div class="col-lg-1 row-bordered"></div>
+                        <div class="col-lg-2">Other</div>
+                        <div class="col-lg-1 row-bordered"></div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 bl">7. INSURED'S NAME (No., Street)
+            </div>
+        </div>
+
+        <div class="row row-bordered no-border-top">
+            <div class="col-lg-4">
+                <div class="row">
+                    <div class="col-lg-10">CITY</div>
+                    <div class="col-lg-2 bl">STATE</div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-10">&nbsp;</div>
+                    <div class="col-lg-2 bl">&nbsp;</div>
+                </div>
+                <div class="row row-bordered-top">
+                    <div class="col-lg-4">ZIP CODE</div>
+                    <div class="col-lg-8 bl">TELEPHONE (Include Area Code)</div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4"></div>
+                    <div class="col-lg-8 bl">
+                        <div class="row">
+                            <div class="col-lg-2">(</div>
+                            <div>)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 bl">8. RESERVED FOR NUCC USE </div>
+            <div class="col-lg-5 bl">
+                <div class="row">
+                    <div class="col-lg-10">CITY</div>
+                    <div class="col-lg-2 bl">STATE</div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-10">&nbsp;</div>
+                    <div class="col-lg-2 bl">&nbsp;</div>
+                </div>
+                <div class="row row-bordered-top">
+                    <div class="col-lg-4">ZIP CODE</div>
+                    <div class="col-lg-8 bl">TELEPHONE (Include Area Code)</div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4"></div>
+                    <div class="col-lg-8 bl">
+                        <div class="row">
+                            <div class="offset-lg-1 col-lg-2">(</div>
+                            <div>)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-bordered no-border-top">
+            <div class="col-lg-4">
+                <div class="row">
+                    <div class="col-lg-12 pr-0">9. OTHER INSURED'S NAME(Last Name, First Name, Middle Initial)</div>
+                    <div class="col-lg-12">&nbsp;</div>
+                </div>
+                <div class="row row-bordered-top">
+                    <div class="col-lg-12 pr-0">a. OTHER INSURED'S POLICY OR GROUP NUMBER</div>
+                    <div class="col-lg-12">&nbsp;</div>
+                </div>
+                <div class="row row-bordered-top">
+                    <div class="col-lg-12 pr-0">b. RESERVED FOR NUCC USE</div>
+                    <div class="col-lg-12">&nbsp;</div>
+                </div>
+                <div class="row row-bordered-top">
+                    <div class="col-lg-12 pr-0">c. RESERVED FOR NUCC USE</div>
+                    <div class="col-lg-12">&nbsp;</div>
+                </div>
+            </div>
+            <div class="col-lg-3 bl">
+                <div class="col-lg-12 px-0">10. IS PATIENT'S CONDITION RELATED TO:</div>
+                <div class="col-lg-12">&nbsp;</div>
+                <div class="col-lg-12 px-0">a. Employment? (Current or Previous)</div>
+                <div class="row">
+                    <div class="offset-lg-3 col-lg-1 row-bordered"></div>
+                    <div class="col-lg-1">YES</div>
+                    <div class="offset-lg-1 col-lg-1 row-bordered"></div>
+                    <div class="col-lg-1">NO</div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8">b. AUTO ACCIDENT?</div>
+                    <div class="col-lg-4">PLACE(State)</div>
+                </div>
+                <div class="row">
+                    <div class="offset-lg-3 col-lg-1 row-bordered"></div>
+                    <div class="col-lg-1">YES</div>
+                    <div class="offset-lg-1 col-lg-1  row-bordered"></div>
+                    <div class="col-lg-1">NO</div>
+                    <div class="offset-lg-1 col-lg-3 ml-3  row-bordered"></div>
+                </div>
+                <div class="col-lg-12 px-0">c. OTHER ACCIDENT?</div>
+                <div class="row mb-1">
+                    <div class="offset-lg-3 col-lg-1 row-bordered"></div>
+                    <div class="col-lg-1">YES</div>
+                    <div class="offset-lg-1 col-lg-1 row-bordered"></div>
+                    <div class="col-lg-1">NO</div>
+                </div>
+            </div>
+            <div class="col-lg-5 bl">
+                <div class="row">
+                    <div class="col-lg-12 pr-0">11. INSURED'S POLICY GROUP OR FECA NUMBER</div>
+                    <div class="col-lg-12">&nbsp;</div>
+                </div>
+                <div class="row row-bordered-top">
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-lg-8 ">a. INSURED'S BIRTH DATE</div>
+                            <div class="offset-lg-1 col-lg-2">SEX</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="row min-height">
+                            <div class="col-lg-2">MM</div>
+                            <div class="col-lg-1">|</div>
+                            <div class="col-lg-2">DD</div>
+                            <div class="col-lg-1">|</div>
+                            <div class="col-lg-2">YY</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="row min-height">
+
+                            <div class="offset-lg-2 col-lg-1">|</div>
+                            <div class="offset-lg-2 col-lg-1">|</div>
+                            <div class="offset-lg-1 col-lg-1">&nbsp;</div>
+                            <div class="offset-lg-1 mx-2">M</div>
+                            <div class="col-lg-1 row-bordered"></div>
+                            <div class="mx-2">F</div>
+                            <div class="col-lg-1 row-bordered"></div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="row">
+
+                            <div class="offset-lg-2 col-lg-1">|</div>
+                            <div class="offset-lg-2 col-lg-1">|</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-bordered-top">
+                    <div class="col-lg-12 pr-0">b. OTHER CLAIM ID (Designate by NUCC)</div>
+                    <div class="col-lg-12  min-height">
+
+                        <div class="offset-lg-1">|</div>
+                    </div>
+                    <div class="col-lg-12  min-height">
+
+                        <div class="offset-lg-1">|</div>
+                    </div>
+                    <div class="col-lg-12">
+
+                        <div class="offset-lg-1">|</div>
+                    </div>
+                </div>
+                <div class="row row-bordered-top">
+                    <div class="col-lg-12 pr-0">c. INSURANCE PLAN NAME OR PROGRAM NAME</div>
+                    <div class="col-lg-12">&nbsp;</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row row-bordered no-border-top">
+            <div class="col-lg-4">
+                d. INSURANCE PLAN NAME OR PROGRAM NAME
+                <div class="row">&nbsp;</div>
+            </div>
+            <div class="col-lg-3 bl">
+                10d. CLAIM CODES (Designated by NUCC)
+                <div class="row">&nbsp;</div>
+            </div>
+            <div class="col-lg-5 bl">
+                d. IS THERE ANOTHER HEALTH BENIFIT PLAN?
+                <div class="row  mb-1">
+                    <div class="offset-lg-1 col-lg-1 row-bordered"></div>
+                    <div class="col-lg-1">YES</div>
+                    <div class="col-lg-1 row-bordered"></div>
+                    <div class="col-lg-1">NO</div>
+                    <div class="offset-lg-1"><span class="font-italic">if yes, </span>complete items 9, 9a and 9d.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-bordered no-border-top" style="border-bottom-width: 5px">
+            <div class="col-lg-7">
+                <div class="row"> <b class="text-center" READ BACK OF FORM BEFORE COMPLETING & SIGNING THIS FORM.></b>
+                </div>
+                <div class="row">
+                    <text class="px-1">12. <content class="text-justify"> PATIENT'S OR AUTHORIZED PERSON'S SIGNATURE
+                            I
+                            authorize the
+                            release of any
+                            medical
+                            or other information necessary to process this claim. I also request payment of
+                            government
+                            benefits
+                            either to myself or to the party who accepts assignment below.
+                        </content>
+                    </text>
+                </div>
+                <div class="row">&nbsp;</div>
+                <div class="row mb-1">
+                    <div class="offset-lg-1 col-lg-1">SIGNED</div>
+                    <div class="col-lg-6 row-bordered-bottom" style="margin-left: -0.6em;
+                    margin-bottom: 0.5em;"></div>
+                    <div class="offset-lg-1 col-lg-1">DATE</div>
+                    <div class="col-lg-2 row-bordered-bottom" style="margin-left: -1.6em;
+                    margin-bottom: 0.5em;"></div>
+                </div>
+            </div>
+            <div class="col-lg-5 bl">
+                <div class="row px-1">13. INSURED'S OR AUTHORIZED PERSON'S SIGNATURE I authrorize payment of medical
+                    benefits
+                    to the undersigned physician or supplier for services described below.</div>
+                <div class="row">&nbsp;</div>
+                <div class="row">
+                    <div class="offset-lg-1 col-lg-1">SIGNED</div>
+                    <div class="col-lg-9 row-bordered-bottom" style="margin-left: 0.6em;
+                    margin-bottom: 0.5em;"></div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="row row-bordered no-border-top">
+            <div class="col-lg-7 px-0">
+                <div class="row">
+                    <div class="col-lg-7 px-0">
+                        <div class="col-lg-12">
+                            14. DATE OF CURRENT ILLNESS, INJURY, or PREGNANCY (LMP)
+                        </div>
+                        <div class="row min-height">
+                            <div class="offset-lg-1 col-lg-1">MM</div>
+                            <div class="col-lg-1">|</div>
+                            <div class="col-lg-1">DD</div>
+                            <div class="col-lg-1">|</div>
+                            <div class="col-lg-1">YY</div>
+                            <div class="offset-lg-1 col-lg-1">|</div>
+                        </div>
+                        <div class="row min-height">
+                            <div class="offset-lg-2 col-lg-1">|</div>
+                            <div class="offset-lg-1 col-lg-1">|</div>
+                            <div class="offset-lg-2 col-lg-1">|</div>
+                        </div>
+                        <div class="row min-height">
+                            <div class="offset-lg-2 col-lg-1">|</div>
+                            <div class="offset-lg-1 col-lg-1">|</div>
+                            <div class="offset-lg-1 col-lg-1">QUAL.</div>
+                            <div class="col-lg-1">|</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 bl">
+                        15. OTHER DATE
+                        <div class="row min-height">
+                            <div class="offset-lg-2 col-lg-1">|</div>
+                            <div class="offset-lg-1 col-lg-1">|</div>
+                            <div class="offset-lg-1 col-lg-1">MM</div>
+                            <div class="col-lg-1">|</div>
+                            <div class="col-lg-1">DD</div>
+                            <div class="col-lg-1">|</div>
+                            <div class="col-lg-1 pl-2">YY</div>
+                        </div>
+                        <div class="row min-height">
+                            <div class="col-lg-2">QUAL.</div>
+                            <div class="col-lg-1">|</div>
+                            <div class="offset-lg-1 col-lg-1">|</div>
+                            <div class="offset-lg-2 col-lg-1">|</div>
+                            <div class="offset-lg-1 col-lg-1">|</div>
+                        </div>
+                        <div class="row">
+                            <div class="offset-lg-2 col-lg-1">|</div>
+                            <div class="offset-lg-1 col-lg-1">|</div>
+                            <div class="offset-lg-2 col-lg-1">|</div>
+                            <div class="offset-lg-1 col-lg-1">|</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 bl">
+                <div class="col-lg-12">16. DATES PATIENT UNABLE TO WORK IN CURRENT OCCUPATION</div>
+                <div class="row min-height">
+                    <div class="offset-lg-1 col-lg-1">MM</div>
+                    <div class="col-lg-1">|</div>
+                    <div class="col-lg-1">DD</div>
+                    <div class="col-lg-1">|</div>
+                    <div class="pl-2 col-lg-1">YY</div>
+                    <div class="offset-lg-1 col-lg-1 pl-2">MM</div>
+                    <div class="col-lg-1">|</div>
+                    <div class="col-lg-1">DD</div>
+                    <div class="col-lg-1">|</div>
+                    <div class="col-lg-1 pl-2">YY</div>
+                </div>
+                <div class="row min-height">
+                    <div class="pl-2 col-lg-1">FROM</div>
+                    <div class="offset-lg-1 col-lg-1">|</div>
+                    <div class="col-lg-1">DD</div>
+                    <div class="col-lg-1">|</div>
+                    <div class="pl-2 col-lg-1">YY</div>
+                    <div class="off col-lg-1">|</div>
+                    <div class="col-lg-1">TO</div>
+                    <div class="col-lg-1">|</div>
+                    <div class="col-lg-1">DD</div>
+                    <div class="col-lg-1">|</div>
+                    <div class="col-lg-1 pl-2">YY</div>
+                </div>
+                <div class="row">
+                    <div class="offset-lg-2 col-lg-1">|</div>
+                    <div class="offset-lg-1 col-lg-1">|</div>
+                    <div class="offset-lg-3 col-lg-1">|</div>
+                    <div class="offset-lg-1 col-lg-1">|</div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row row-bordered no-border-top">
+            <div class="col-lg-7 px-0">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="col-lg-12 px-0">17. NAME OF REFERRING PROVIDER OR OTHER SOURCE</div>
+                        <div class="offset-lg-1 min-height">|</div>
+                        <div class="offset-lg-1 min-height">|</div>
+                        <div class="offset-lg-1">|</div>
+                    </div>
+                    <div class="col-lg-5 bl ">
+                        <div class="row row-bordered-bottom">
+                            <div class="col-lg-1 px-0">17a.</div>
+                            <div class="col-lg-1 bl"></div>
+                            <div class="col-lg-10 bl">&nbsp;</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-1 px-0">17b.</div>
+                            <div class="col-lg-2 bl">NPI</div>
+                            <div class="col-lg-9 bl">&nbsp;</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 bl">
+                <div class="col-lg-12">18. HOSPITALIZATION DATES RELATED TO CURRENT SERVICES</div>
+                <div class="row min-height">
+                    <div class="offset-lg-1 col-lg-1">MM</div>
+                    <div class="col-lg-1">|</div>
+                    <div class="col-lg-1">DD</div>
+                    <div class="col-lg-1">|</div>
+                    <div class="pl-2 col-lg-1">YY</div>
+                    <div class="offset-lg-1 col-lg-1 pl-2">MM</div>
+                    <div class="col-lg-1">|</div>
+                    <div class="col-lg-1">DD</div>
+                    <div class="col-lg-1">|</div>
+                    <div class="col-lg-1 pl-2">YY</div>
+                </div>
+                <div class="row min-height">
+                    <div class="pl-2 col-lg-1">FROM</div>
+                    <div class="offset-lg-1 col-lg-1">|</div>
+                    <div class="col-lg-1">DD</div>
+                    <div class="col-lg-1">|</div>
+                    <div class="pl-2 col-lg-1">YY</div>
+                    <div class="off col-lg-1">|</div>
+                    <div class="col-lg-1">TO</div>
+                    <div class="col-lg-1">|</div>
+                    <div class="col-lg-1">DD</div>
+                    <div class="col-lg-1">|</div>
+                    <div class="col-lg-1 pl-2">YY</div>
+                </div>
+                <div class="row">
+                    <div class="offset-lg-2 col-lg-1">|</div>
+                    <div class="offset-lg-1 col-lg-1">|</div>
+                    <div class="offset-lg-3 col-lg-1">|</div>
+                    <div class="offset-lg-1 col-lg-1">|</div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-bordered no-border-top">
+            <div class="col-lg-7">19. ADDITIONAL CLAIM INFORMATION (Designated by NUCC)</div>
+            <div class="col-lg-5 bl">
+                <div class="row">
+                    <div class="col-lg-6">20. OUTSIDE LAB?</div>
+                    <div class="col-lg-6">$ CHARGES</div>
+                </div>
+                <div class="row">
+                    <div class="offset-lg-1 col-lg-1 row-bordered"></div>
+                    <div class="col-lg-1">YES</div>
+                    <div class="offset-lg-1 col-lg-1 row-bordered"></div>
+                    <div class="col-lg-1">NO</div>
+                    <div class="col-lg-3 bl">&nbsp;</div>
+                    <div class="col-lg-3 bl">&nbsp;</div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-bordered no-border-top">
+            <div class="col-lg-7">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-10 px-0">21. DIAGNOSIS OR NATURE OF ILLNESS OR INJURY Relate A-L to service
+                            line
+                            below
+                            (24E)</div>
+                        <div class="off-set-lg-1 col-lg-1 min-height">|</div>
+                        <div class="col-lg-1 min-height">|</div>
+                    </div>
+
+                    <div class="row">
+                        <div class="offset-lg-10 col-lg-1 pt-0">|</div>
+                        <div class="col-lg-1 pt-0">|</div>
+                    </div>
+                    <div class="row pb-2">
+                        <div class="col-lg-3">
+                            <div class="row">
+                                <div class="col-lg-2"> A.</div>
+                                <div class="col-lg-10 bl row-bordered-bottom"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="row">
+                                <div class="col-lg-2"> B.</div>
+                                <div class="col-lg-10 bl row-bordered-bottom"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="row">
+                                <div class="col-lg-2"> C.</div>
+                                <div class="col-lg-10 bl row-bordered-bottom"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="row">
+                                <div class="col-lg-2"> D.</div>
+                                <div class="col-lg-10 bl row-bordered-bottom"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row pb-2">
+                        <div class="col-lg-3">
+                            <div class="row">
+                                <div class="col-lg-2"> E.</div>
+                                <div class="col-lg-10 bl row-bordered-bottom"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="row">
+                                <div class="col-lg-2"> F.</div>
+                                <div class="col-lg-10 bl row-bordered-bottom"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="row">
+                                <div class="col-lg-2"> G.</div>
+                                <div class="col-lg-10 bl row-bordered-bottom"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="row">
+                                <div class="col-lg-2"> H.</div>
+                                <div class="col-lg-10 bl row-bordered-bottom"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row pb-2">
+                        <div class="col-lg-3">
+                            <div class="row">
+                                <div class="col-lg-2"> I.</div>
+                                <div class="col-lg-10 bl row-bordered-bottom"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="row">
+                                <div class="col-lg-2"> J.</div>
+                                <div class="col-lg-10 bl row-bordered-bottom"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="row">
+                                <div class="col-lg-2"> K.</div>
+                                <div class="col-lg-10 bl row-bordered-bottom"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="row">
+                                <div class="col-lg-2"> L.</div>
+                                <div class="col-lg-10 bl row-bordered-bottom"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 bl px-0 row-bordered-bottom">
+                <div class="row">
+                    <div class="col-lg-5">22. RESUBMISSION CODE</div>
+                    <div class="col-lg-7">&nbsp;</div>
+                </div>
+
+                <div class="offset-lg-7 col-lg-7 bl">ORIGINAL REF. NO.</div>
+
+                <div class="offset-lg-7 col-lg-7 bl">&nbsp;</div>
+                <div class="row-bordered-bottom px-0"></div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        23. PRIOR AUTHORIZATION NUMBER</div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="row row-bordered no-border-top">
+            <div class="col-lg-7">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="row">
+                            <div class="col-lg-1">24.</div>
+                            <div class="col-lg-1">A.</div>
+                            <div class="col-lg-9">DATE(S) OF SERVICE</div>
+                        </div>
+                        <div class="row">
+                            <div class="offset-lg-3 col-lg-2">From</div>
+                            <div class="offset-lg-3 col-lg-2">To</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-1">MM</div>
+                            <div class="offset-lg-1 col-lg-1">DD</div>
+                            <div class="offset-lg-1 col-lg-1">YY</div>
+                            <div class="offset-lg-1 col-lg-1">MM</div>
+                            <div class="offset-lg-1 col-lg-1">DD</div>
+                            <div class="offset-lg-1 col-lg-1">YY</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-1 bl">
+                        <div class="text-center">B.</div>
+
+                        <div style="letter-spacing: -2px;">
+                            PLACE OF</div>
+                        SERVICE
+                    </div>
+                    <div class="col-lg-1 bl">
+                        <div class="text-center">C.</div>
+                        <div class="text-center">&nbsp;</div>
+                        <div class="text-center">EMG</div>
+                    </div>
+                    <div class="col-lg-4 bl px-0">
+                        <div>D.PROCEDURES,SERVICES,OR SUPPLIES</div>
+                        <div class="text-center">(Explain Unusual Circumstances)</div>
+                        <div class="row">
+                            <div class="col-lg-5 pl-4">CPT/HCPCS</div>
+                            <div class="col-lg-7 bl text-center">MODIFIER</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 bl">
+                        <div class="text-center">E.</div>
+                        <div class="text-center">DIAGNOSIS</div>
+                        <div class="text-center">POINTER</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 bl">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="text-center">F.</div>
+                        <div class="text-center">&nbsp;</div>
+                        <div class="text-center">$ CHARGES</div>
+                    </div>
+                    <div class="col-lg-1 bl">
+                        <div class="text-center">G.</div>
+                        <div class="text-center" style="font-size: 0.8em">DAYS</div>
+                        <div class="text-center" style="font-size: 0.8em">OR</div>
+                        <div class="text-center" style="font-size: 0.8em">UNITS</div>
+                    </div>
+                    <div class="col-lg-1 bl px-0" style="letter-spacing: -0.6px">
+                        <div class="text-center">H.</div>
+                        <div class="text-center" style="font-size: 0.8em">EPSDT</div>
+                        <div class="text-center" style="font-size: 0.8em">Family</div>
+                        <div class="text-center" style="font-size: 0.8em">Plan</div>
+                    </div>
+                    <div class="col-lg-1 bl">
+                        <div class="text-center">I.</div>
+                        <div class="text-center">ID.</div>
+                        <div class="text-center">QUAL</div>
+                    </div>
+                    <div class="bl col-lg-6">
+                        <div class="text-center">J.</div>
+                        <div class="text-center">RENDERING</div>
+                        <div class="text-center">PROVIDER ID. #</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./NPI.PNG" alt="Enter NPI Details here" style="width: 103.6%;margin-left: -2.22em;">
+
+
+
+
+
+        <div class="row row-bordered no-bordered-top">
+            <div class="col-lg-7">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="row">
+                            <div class="col-lg-9">25. FEDERAL TAX I.D. NUMBER </div>
+                            <div class="col-lg-1 mr-1">SSN</div>
+                            <div class="col-lg-1">EIN</div>
+                        </div>
+                        <div class="row">
+                            <div class="offset-lg-9 col-lg-1 row-bordered mr-1">&nbsp;</div>
+                            <div class="col-lg-1 row-bordered"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 bl">
+                        26. PATIENT'S ACCOUNT NO.
+                    </div>
+                    <div class="col-lg-3 bl">
+                        <div class="row pl-1 ">
+                            27. ACCEPT ASSIGNMENT?
+                        </div>
+                        <div class="row">
+                            <small>(For govt. claims, see back)</small>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-2 row-bordered">&nbsp;</div>
+                            <div class="col-lg-3">YES</div>
+                            <div class="col-lg-2 row-bordered"></div>
+                            <div class="col-lg-3">NO</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 bl">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="row">
+                            <div class="col-lg-10"> 28. TOTAL CHARGE</div>
+                            <div class="offset-lg-1 col-lg-1 row-bordered"></div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-1">$</div>
+                            <div class="offset-lg-7 bl-dassed col-lg-1"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 bl">
+                        29. AMOUNT PATIENT
+                        <div class="row">&nbsp;</div>
+                        <div class="row">
+                            <div class="col-lg-1">$</div>
+                            <div class="offset-lg-7 bl-dassed col-lg-1"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 bl">
+                        30. Rsvd. for NUCC Use
+                        <div class="row">&nbsp;</div>
+                        <div class="row">
+                            <div class="col-lg-1">$</div>
+                            <div class="offset-lg-7 bl-dassed col-lg-1"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-bordered no-border-top">
+            <div class="col-lg-7">
+                <div class="row">
+                    <div class="col-lg-5 px-0">
+                        31. SIGNATURE OF PHYSICIAN OR SUPPLIER INCLUDING DEGREES OR CREDENTIALS (I certify that the
+                        statements on the reverse apply to this bill and are made a part thereof.)
+
+                        <div class="row">&nbsp;</div>
+                        <div class="row">&nbsp;</div>
+                        <div class="row">
+                            <div class="col-lg-2">SIGNED</div>
+                            <div class="offset-lg-7 col-lg-2">DATE
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 bl">
+                        32. SERVICE FACILITY LOCATION INFORMATION
+                        <div class="row">&nbsp;</div>
+                        <div class="row">&nbsp;</div>
+                        <div class="row">&nbsp;</div>
+                        <div class="row">&nbsp;</div>
+                        <div class="row">&nbsp;</div>
+                        <div class="row row-bordered">
+                            <div class="col-lg-6">a.</div>
+                            <div class="col-lg-6 bl">b.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 bl">
+                <div class="row">
+                    <div class="col-lg-6"> 33. BILLING PROVIDER INFO & PH #</div>
+                    <div class="col-lg-2"><b>(</b></div>
+                    <div class="col-lg-2"><b>)</b></div>
+                </div>
+                <div class="row">&nbsp;</div>
+                <div class="row">&nbsp;</div>
+                <div class="row">&nbsp;</div>
+                <div class="row">&nbsp;</div>
+                <div class="row">&nbsp;</div>
+                <div class="row row-bordered">
+                    <div class="col-lg-6">a.</div>
+                    <div class="col-lg-6 bl">b.</div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-lg-4 px-0">NUCC Insturction Manual available at: www.nucc.org</div>
+            <div class="col-lg-2"><b><i>PLEASE PRINT OR TYPE</i></b></div>
+            <div class="offset-lg-2 col-lg-4 ">
+                <span style="float: right"> APPROVED OMB-0938- 1197 FORM 1500 (02- 12)</span></div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+</body>
+
+</html>
+
+<script>
+    $(document).ready(function () {
+        $('.row-bordered').click(function (e, y) {
+            console.log(e);
+        })
+    });
+</script>
